@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/
+normalize.min.css" rel="stylesheet" />
+        
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+        
+		<title> Tightie Whities </title>
+	
+<style>
+    
+    header {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 300;
+        padding: 60px;
+        text-align: center;
+        background: #1abc9c;
+        color: white;
+        font-size: 2em;
+    } 
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row; 
+        align-content: flex-start;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    
+    .product{
+       display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1em 6em 6em 1em;
+    }
+    
+    
+    .info{
+        font-family: 'Roboto Condensed', sans-serif;
+        text-align: center;
+        padding-left: 1em;
+    }
+    
+    
+    h3{
+        margin-top: 0;
+        text-align: center;
+    }
+    
+    p{
+        font-family: 'Roboto Condensed', sans-serif;
+        line-height: 1.6;
+    }
+    
+    
+    details{
+        text-align: center;
+        display: block;
+        position: absolute;
+        margin: auto;
+    }
+   
+    summary{
+         font-family: 'Roboto Condensed', sans-serif; 
+    }
+    
+    .actions{
+        margin-left: 0;
+        padding-left: 0;
+        
+    }
+    
+    button{
+        font-family: 'Roboto Condensed', sans-serif;
+        background-color: #1abc9c; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        font-size: 1em;
+        border-radius: 0.1em;
+            }
+    
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row; 
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 1%;
+        justify-content:space-around;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 300;
+        background: #1abc9c;
+        color: white;
+        font-size: 0.9em;
+        text-align: center;
+    }
+    
+    a{
+        color: white;
+    }
+    
+    table{
+      border-collapse: collapse;  
+    }
+      
+    table, th, td {
+        padding: 0.4em;
+        border: 1px solid lightgray;
+    }
+    
+    .tableHeader{
+        background-color: lightgray;
+    }
+    
+    
+@media (max-width: 1680px) {
+    
+     .container {
+        justify-content: space-between;
+    }
+    
+   .product{
+     
+        padding: 1em 3em 3em 1em;
+    }
+    
+   .info{
+       padding-left: 0.5em;
+    }
+    
+   details{
+       font-size: 0.7em;
+    }  
+    
+}
+    
+
+@media (max-width: 1565px) {
+    .container {
+        justify-content: center;
+    }
+    .product{
+        padding: 1em 3em 3em 1em;
+    }
+    
+  footer{
+        flex-direction: column; 
+        padding-top: 2%;
+        padding-bottom: 2%;
+        justify-content:space-around;
+        font-size: 0.8em;
+    }  
+    
+}
+    
+
+    @media (max-width: 800px) {
+        
+        .product{
+        display: flex;
+        flex-direction: column-reverse;;
+        flex-wrap: wrap;
+        padding: 1em 1em 1em 1em;
+        border-top: 1px solid #1abc9c;
+        margin-bottom: 6em;
+    }
+        
+        img{
+        margin-left: auto;
+        margin-right: auto;
+            
+        }
+        
+        .info{
+       margin-bottom: 0.5em;
+    }
+    
+        
+        details{
+        font-size: 0.9em;
+        position: relative;
+        }
+    
+        table{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        }
+       
+     
+        h3{
+        font-size: 1.5em;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        }
+        
+        p{
+        margin:0.5em;
+        }
+        
+        .actions{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        }
+    
+}
+   
+        
+    
+</style>
+    
+    
+    </head>
+    
+
+	<body>
+        
+        <header> 
+            <h1>Tightie Whities</h1>
+        </header>
+        <div class="container">
+        <div class="product">
+            <div class="image">
+                <img src="tshirts/tshirt_1.jpg" alt="black and white tshirt">
+                <div class="actions"> <button type="BUY">Buy it</button> </div>  
+            </div>
+            <div class="info">
+            <h3>T-shirt</h3>
+            <p>9.9 &#x20AC</p>
+          
+            <details>
+            <summary>Size Guide</summary>
+        <table>
+        <tr>
+        </tr>
+            <tr class="tableHeader">
+                <th class="tableHeader">Size</th> <th>Inches</th> <th>CM</th>
+            </tr>
+            <tr>
+                <td>XXS</td> <td>30-32</td> <td>81-86</td>
+            </tr>
+            <tr >
+                <td>XS</td> <td>34-36</td> <td>86-91</td>
+            </tr>
+            <tr>
+                <td>S</td> <td>36-38</td> <td>91-96</td>
+            </tr>
+              <tr >
+                <td>M</td> <td>38-40</td> <td>96-101</td>
+            </tr>
+            <tr >
+                <td>L</td> <td>40-42</td> <td>101-106</td>
+            </tr>
+            <tr >
+                <td>XL</td> <td>42-44</td> <td>106-111</td>
+            </tr>
+              <tr >
+                <td>XXL</td> <td>44-46</td> <td>111-116</td>
+            </tr>
+        </table>
+            </details>
+           </div>
+            
+           
+        </div>
+        
+        <div class="product">
+            <div class="image">
+            <img src="tshirts/tshirt_2.jpg" alt="black and white tshirt">
+             <div class="actions"> <button type="BUY">Buy it</button> </div> 
+            </div>
+            
+            <div class="info">
+            <h3>T-shirt</h3>
+            <p>9.9 &#x20AC</p>
+            
+            <details>
+            <summary>Size Guide</summary>
+        <table>
+        <tr>
+        </tr>
+            <tr class="tableHeader">
+                <th>Size</th> <th>Inches</th> <th>CM</th>
+            </tr>
+            <tr>
+                <td>XXS</td> <td>30-32</td> <td>81-86</td>
+            </tr>
+            <tr >
+                <td>XS</td> <td>34-36</td> <td>86-91</td>
+            </tr>
+            <tr>
+                <td>S</td> <td>36-38</td> <td>91-96</td>
+            </tr>
+              <tr >
+                <td>M</td> <td>38-40</td> <td>96-101</td>
+            </tr>
+            <tr >
+                <td>L</td> <td>40-42</td> <td>101-106</td>
+            </tr>
+            <tr >
+                <td>XL</td> <td>42-44</td> <td>106-111</td>
+            </tr>
+              <tr >
+                <td>XXL</td> <td>44-46</td> <td>111-116</td>
+            </tr>
+        </table>
+            
+                </details>
+       
+            </div>
+          
+            
+        </div>
+        
+        <div class="product">
+             <div class="image">
+            <img src="tshirts/tshirt_3.jpg" alt="black and white tshirt">
+                  <div class="actions"> <button type="BUY">Buy it</button> </div> 
+            </div>
+            <div class="info">
+            <h3>T-shirt</h3>
+            <p>9.9 &#x20AC</p>
+            
+            <details>
+            <summary>Size Guide</summary>
+        <table>
+        <tr>
+        </tr>
+            <tr class="tableHeader">
+                <th>Size</th> <th>Inches</th> <th>CM</th>
+            </tr>
+            <tr>
+                <td>XXS</td> <td>30-32</td> <td>81-86</td>
+            </tr>
+            <tr >
+                <td>XS</td> <td>34-36</td> <td>86-91</td>
+            </tr>
+            <tr>
+                <td>S</td> <td>36-38</td> <td>91-96</td>
+            </tr>
+              <tr >
+                <td>M</td> <td>38-40</td> <td>96-101</td>
+            </tr>
+            <tr >
+                <td>L</td> <td>40-42</td> <td>101-106</td>
+            </tr>
+            <tr >
+                <td>XL</td> <td>42-44</td> <td>106-111</td>
+            </tr>
+              <tr >
+                <td>XXL</td> <td>44-46</td> <td>111-116</td>
+            </tr>
+        </table>
+            </details>
+            
+            </div>
+        </div>
+        
+        <div class="product">
+            <div class="image">
+            <img src="tshirts/tshirt_4.jpg" alt="black and white tshirt">
+             <div class="actions"> <button type="BUY">Buy it</button> </div> 
+            </div>
+            <div class="info">
+            <h3>T-shirt</h3>
+            <p>9.9 &#x20AC</p>
+            
+            <details>
+            <summary>Size Guide</summary>
+        <table>
+        <tr>
+        </tr>
+            <tr class="tableHeader">
+                <th>Size</th> <th>Inches</th> <th>CM</th>
+            </tr>
+            <tr>
+                <td>XXS</td> <td>30-32</td> <td>81-86</td>
+            </tr>
+            <tr >
+                <td>XS</td> <td>34-36</td> <td>86-91</td>
+            </tr>
+            <tr>
+                <td>S</td> <td>36-38</td> <td>91-96</td>
+            </tr>
+              <tr >
+                <td>M</td> <td>38-40</td> <td>96-101</td>
+            </tr>
+            <tr >
+                <td>L</td> <td>40-42</td> <td>101-106</td>
+            </tr>
+            <tr >
+                <td>XL</td> <td>42-44</td> <td>106-111</td>
+            </tr>
+              <tr >
+                <td>XXL</td> <td>44-46</td> <td>111-116</td>
+            </tr>
+        </table>
+            </details>
+            </div>
+            
+            
+        </div>
+        
+        <div class="product">
+            <div class="image">
+            <img src="tshirts/tshirt_5.jpg" alt="black and white tshirt">
+            <div class="actions"> <button type="BUY">Buy it</button> </div> 
+            </div>
+            <div class="info">
+            <h3>T-shirt</h3>
+            <p>9.9 &#x20AC</p>
+            
+            <details>
+            <summary>Size Guide</summary>
+        <table>
+        <tr>
+        </tr>
+            <tr class="tableHeader">
+                <th>Size</th> <th>Inches</th> <th>CM</th>
+            </tr>
+            <tr>
+                <td>XXS</td> <td>30-32</td> <td>81-86</td>
+            </tr>
+            <tr >
+                <td>XS</td> <td>34-36</td> <td>86-91</td>
+            </tr>
+            <tr>
+                <td>S</td> <td>36-38</td> <td>91-96</td>
+            </tr>
+              <tr >
+                <td>M</td> <td>38-40</td> <td>96-101</td>
+            </tr>
+            <tr >
+                <td>L</td> <td>40-42</td> <td>101-106</td>
+            </tr>
+            <tr >
+                <td>XL</td> <td>42-44</td> <td>106-111</td>
+            </tr>
+              <tr >
+                <td>XXL</td> <td>44-46</td> <td>111-116</td>
+            </tr>
+        </table>
+            </details>
+            </div>
+            
+        </div>
+        
+        <div class="product">
+            <div class="image">
+            <img src="tshirts/tshirt_6.jpg" alt="black and white tshirt">
+             <div class="actions"> <button type="BUY">Buy it</button> </div> 
+            </div>
+            <div class="info">
+            <h3>T-shirt</h3>
+            <p>9.9 &#x20AC</p>
+            
+            <details>
+            <summary>Size Guide</summary>
+        <table>
+        <tr>
+        </tr>
+            <tr class="tableHeader">
+                <th>Size</th> <th>Inches</th> <th>CM</th>
+            </tr>
+            <tr>
+                <td>XXS</td> <td>30-32</td> <td>81-86</td>
+            </tr>
+            <tr >
+                <td>XS</td> <td>34-36</td> <td>86-91</td>
+            </tr>
+            <tr>
+                <td>S</td> <td>36-38</td> <td>91-96</td>
+            </tr>
+              <tr >
+                <td>M</td> <td>38-40</td> <td>96-101</td>
+            </tr>
+            <tr >
+                <td>L</td> <td>40-42</td> <td>101-106</td>
+            </tr>
+            <tr >
+                <td>XL</td> <td>42-44</td> <td>106-111</td>
+            </tr>
+              <tr >
+                <td>XXL</td> <td>44-46</td> <td>111-116</td>
+            </tr>
+        </table>
+            </details>
+            </div>
+            
+        </div>
+        
+        <div class="product">
+            <div class="image">
+            <img src="tshirts/tshirt_7.jpg" alt="black and white tshirt">
+                <div class="actions"> <button type="BUY">Buy it</button> </div> 
+            </div>
+            <div class="info">
+            <h3>T-shirt</h3>
+            <p>9.9 &#x20AC</p>
+            
+            <details>
+             <summary>Size Guide</summary>
+        <table>
+        <tr>
+        </tr>
+            <tr class="tableHeader">
+                <th>Size</th> <th>Inches</th> <th>CM</th>
+            </tr>
+            <tr>
+                <td>XXS</td> <td>30-32</td> <td>81-86</td>
+            </tr>
+            <tr >
+                <td>XS</td> <td>34-36</td> <td>86-91</td>
+            </tr>
+            <tr>
+                <td>S</td> <td>36-38</td> <td>91-96</td>
+            </tr>
+              <tr >
+                <td>M</td> <td>38-40</td> <td>96-101</td>
+            </tr>
+            <tr >
+                <td>L</td> <td>40-42</td> <td>101-106</td>
+            </tr>
+            <tr >
+                <td>XL</td> <td>42-44</td> <td>106-111</td>
+            </tr>
+              <tr >
+                <td>XXL</td> <td>44-46</td> <td>111-116</td>
+            </tr>
+        </table>
+            </details>
+            </div>
+            
+        </div>
+        
+        <div class="product">
+            <div class="image">
+            <img src="tshirts/tshirt_8.png" alt="black and white tshirt">
+            <div class="actions"> <button type="BUY">Buy it</button> </div> 
+            </div>
+            <div class="info">
+            <h3>T-shirt</h3>
+            <p>9.9 &#x20AC</p>
+            
+            <details>
+            <summary>Size Guide</summary>
+        <table>
+        <tr>
+        </tr>
+            <tr class="tableHeader">
+                <th>Size</th> <th>Inches</th> <th>CM</th>
+            </tr>
+            <tr>
+                <td>XXS</td> <td>30-32</td> <td>81-86</td>
+            </tr>
+            <tr >
+                <td>XS</td> <td>34-36</td> <td>86-91</td>
+            </tr>
+            <tr>
+                <td>S</td> <td>36-38</td> <td>91-96</td>
+            </tr>
+              <tr >
+                <td>M</td> <td>38-40</td> <td>96-101</td>
+            </tr>
+            <tr >
+                <td>L</td> <td>40-42</td> <td>101-106</td>
+            </tr>
+            <tr >
+                <td>XL</td> <td>42-44</td> <td>106-111</td>
+            </tr>
+              <tr >
+                <td>XXL</td> <td>44-46</td> <td>111-116</td>
+            </tr>
+        </table>
+            </details>
+            </div>
+            
+        </div>
+        
+        <div class="product">
+            <div class="image">
+            <img src="tshirts/tshirt_9.png" alt="black and white tshirt">
+             <div class="actions"> <button type="BUY">Buy it</button> </div> 
+            </div>
+            <div class="info">
+            <h3>T-shirt</h3>
+            <p>9.9 &#x20AC</p>
+        
+            <details>
+             <summary>Size Guide</summary>
+        <table>
+        <tr>
+        </tr>
+            <tr class="tableHeader">
+                <th>Size</th> <th>Inches</th> <th>CM</th>
+            </tr>
+            <tr>
+                <td>XXS</td> <td>30-32</td> <td>81-86</td>
+            </tr>
+            <tr >
+                <td>XS</td> <td>34-36</td> <td>86-91</td>
+            </tr>
+            <tr>
+                <td>S</td> <td>36-38</td> <td>91-96</td>
+            </tr>
+              <tr >
+                <td>M</td> <td>38-40</td> <td>96-101</td>
+            </tr>
+            <tr >
+                <td>L</td> <td>40-42</td> <td>101-106</td>
+            </tr>
+            <tr >
+                <td>XL</td> <td>42-44</td> <td>106-111</td>
+            </tr>
+              <tr >
+                <td>XXL</td> <td>44-46</td> <td>111-116</td>
+            </tr>
+        </table>
+            </details>
+            </div>
+        </div>
+        
+        <div class="product">
+            <div class="image">
+            <img src="tshirts/tshirt_10.jpg" alt="black and white tshirt">
+                 <div class="actions"> <button type="BUY">Buy it</button> </div> 
+            </div>
+            <div class="info">
+            <h3>T-shirt</h3>
+            <p>9.9 &#x20AC</p>
+         
+            <details>
+             <summary>Size Guide</summary>
+        <table>
+        <tr>
+        </tr>
+            <tr class="tableHeader">
+                <th>Size</th> <th>Inches</th> <th>CM</th>
+            </tr>
+            <tr>
+                <td>XXS</td> <td>30-32</td> <td>81-86</td>
+            </tr>
+            <tr >
+                <td>XS</td> <td>34-36</td> <td>86-91</td>
+            </tr>
+            <tr>
+                <td>S</td> <td>36-38</td> <td>91-96</td>
+            </tr>
+              <tr >
+                <td>M</td> <td>38-40</td> <td>96-101</td>
+            </tr>
+            <tr >
+                <td>L</td> <td>40-42</td> <td>101-106</td>
+            </tr>
+            <tr >
+                <td>XL</td> <td>42-44</td> <td>106-111</td>
+            </tr>
+              <tr >
+                <td>XXL</td> <td>44-46</td> <td>111-116</td>
+            </tr>
+        </table>
+            </details> 
+            </div>
+            
+        </div>
+        
+        <div class="product">
+            <div class="image">
+            <img src="tshirts/tshirt_11.jpg" alt="black and white tshirt">
+                 <div class="actions"> <button type="BUY">Buy it</button> </div> 
+            </div>
+            <div class="info">
+            <h3>T-shirt</h3>
+            <p>9.9 &#x20AC</p>
+           
+            <details>
+             <summary>Size Guide</summary>
+        <table>
+        <tr>
+        </tr>
+            <tr class="tableHeader">
+                <th>Size</th> <th>Inches</th> <th>CM</th>
+            </tr>
+            <tr>
+                <td>XXS</td> <td>30-32</td> <td>81-86</td>
+            </tr>
+            <tr >
+                <td>XS</td> <td>34-36</td> <td>86-91</td>
+            </tr>
+            <tr>
+                <td>S</td> <td>36-38</td> <td>91-96</td>
+            </tr>
+              <tr >
+                <td>M</td> <td>38-40</td> <td>96-101</td>
+            </tr>
+            <tr >
+                <td>L</td> <td>40-42</td> <td>101-106</td>
+            </tr>
+            <tr >
+                <td>XL</td> <td>42-44</td> <td>106-111</td>
+            </tr>
+              <tr >
+                <td>XXL</td> <td>44-46</td> <td>111-116</td>
+            </tr>
+        </table>
+            </details>
+            </div>
+            
+        </div>
+        
+        <div class="product">
+            <div class="image">
+            <img src="tshirts/tshirt_12.jpg" alt="black and white tshirt">
+                 <div class="actions"> <button type="BUY">Buy it</button> </div> 
+            </div>
+            <div class="info">
+            <h3>T-shirt</h3>
+            <p>9.9 &#x20AC</p>
+            
+            <details>
+             <summary>Size Guide</summary>
+        <table>
+        <tr>
+        </tr>
+            <tr class="tableHeader">
+                <th>Size</th> <th>Inches</th> <th>CM</th>
+            </tr>
+            <tr>
+                <td>XXS</td> <td>30-32</td> <td>81-86</td>
+            </tr>
+            <tr >
+                <td>XS</td> <td>34-36</td> <td>86-91</td>
+            </tr>
+            <tr>
+                <td>S</td> <td>36-38</td> <td>91-96</td>
+            </tr>
+              <tr >
+                <td>M</td> <td>38-40</td> <td>96-101</td>
+            </tr>
+            <tr >
+                <td>L</td> <td>40-42</td> <td>101-106</td>
+            </tr>
+            <tr >
+                <td>XL</td> <td>42-44</td> <td>106-111</td>
+            </tr>
+              <tr >
+                <td>XXL</td> <td>44-46</td> <td>111-116</td>
+            </tr>
+        </table>
+            </details>
+            </div>
+            
+        </div>
+        
+        <div class="product">
+            <div class="image">
+            <img src="tshirts/tshirt_13.jpg" alt="black and white tshirt">
+             <div class="actions"> <button type="BUY">Buy it</button> </div> 
+            </div>
+            <div class="info">
+            <h3>T-shirt</h3>
+            <p>9.9 &#x20AC</p>
+           
+            <details>
+             <summary>Size Guide</summary>
+        <table>
+        <tr>
+        </tr>
+            <tr class="tableHeader">
+                <th>Size</th> <th>Inches</th> <th>CM</th>
+            </tr>
+            <tr>
+                <td>XXS</td> <td>30-32</td> <td>81-86</td>
+            </tr>
+            <tr >
+                <td>XS</td> <td>34-36</td> <td>86-91</td>
+            </tr>
+            <tr>
+                <td>S</td> <td>36-38</td> <td>91-96</td>
+            </tr>
+              <tr >
+                <td>M</td> <td>38-40</td> <td>96-101</td>
+            </tr>
+            <tr >
+                <td>L</td> <td>40-42</td> <td>101-106</td>
+            </tr>
+            <tr >
+                <td>XL</td> <td>42-44</td> <td>106-111</td>
+            </tr>
+              <tr >
+                <td>XXL</td> <td>44-46</td> <td>111-116</td>
+            </tr>
+        </table>
+            </details>
+            </div>
+        </div>
+        
+        <div class="product">
+            <div class="image">
+            <img src="tshirts/tshirt_14.png" alt="black and white tshirt">
+             <div class="actions"> <button type="BUY">Buy it</button> </div> 
+            </div>
+            <div class="info">
+            <h3>T-shirt</h3>
+            
+            <p>9.9 &#x20AC</p>
+            <details>
+             <summary>Size Guide</summary>
+        <table>
+        <tr>
+        </tr>
+            <tr class="tableHeader">
+                <th>Size</th> <th>Inches</th> <th>CM</th>
+            </tr>
+            <tr>
+                <td>XXS</td> <td>30-32</td> <td>81-86</td>
+            </tr>
+            <tr >
+                <td>XS</td> <td>34-36</td> <td>86-91</td>
+            </tr>
+            <tr>
+                <td>S</td> <td>36-38</td> <td>91-96</td>
+            </tr>
+              <tr >
+                <td>M</td> <td>38-40</td> <td>96-101</td>
+            </tr>
+            <tr >
+                <td>L</td> <td>40-42</td> <td>101-106</td>
+            </tr>
+            <tr >
+                <td>XL</td> <td>42-44</td> <td>106-111</td>
+            </tr>
+              <tr >
+                <td>XXL</td> <td>44-46</td> <td>111-116</td>
+            </tr>
+        </table>
+            </details>
+            </div>
+        </div>
+        
+        <div class="product">
+            <div class="image_15">
+            <img src="tshirts/tshirt_15.jpg" alt="black and white tshirt">
+             <div class="actions"> <button type="BUY">Buy it</button> </div> 
+            </div>
+            <div class="info">
+            <h3>T-shirt</h3>
+            
+            <p>9.9 &#x20AC</p>
+            <details>
+              <summary>Size Guide</summary>
+        <table>
+        <tr>
+        </tr>
+            <tr class="tableHeader">
+                <th>Size</th> <th>Inches</th> <th>CM</th>
+            </tr>
+            <tr>
+                <td>XXS</td> <td>30-32</td> <td>81-86</td>
+            </tr>
+            <tr >
+                <td>XS</td> <td>34-36</td> <td>86-91</td>
+            </tr>
+            <tr>
+                <td>S</td> <td>36-38</td> <td>91-96</td>
+            </tr>
+              <tr >
+                <td>M</td> <td>38-40</td> <td>96-101</td>
+            </tr>
+            <tr >
+                <td>L</td> <td>40-42</td> <td>101-106</td>
+            </tr>
+            <tr >
+                <td>XL</td> <td>42-44</td> <td>106-111</td>
+            </tr>
+              <tr >
+                <td>XXL</td> <td>44-46</td> <td>111-116</td>
+            </tr>
+        </table>
+            </details>
+            </div>
+        </div>
+        
+        <div class="product">
+            <div class="image">
+            <img src="tshirts/tshirt_16.jpg" alt="black and white tshirt">
+            <div class="actions"> <button type="BUY">Buy it</button> </div> 
+            </div>
+            <div class="info">
+            <h3>T-shirt</h3>
+            <p>9.9 &#x20AC</p>
+            
+         <details>
+           <summary>Size Guide</summary>
+        <table>
+        <tr>
+        </tr>
+            <tr class="tableHeader">
+                <th>Size</th> <th>Inches</th> <th>CM</th>
+            </tr>
+            <tr>
+                <td>XXS</td> <td>30-32</td> <td>81-86</td>
+            </tr>
+            <tr >
+                <td>XS</td> <td>34-36</td> <td>86-91</td>
+            </tr>
+            <tr>
+                <td>S</td> <td>36-38</td> <td>91-96</td>
+            </tr>
+              <tr >
+                <td>M</td> <td>38-40</td> <td>96-101</td>
+            </tr>
+            <tr >
+                <td>L</td> <td>40-42</td> <td>101-106</td>
+            </tr>
+            <tr >
+                <td>XL</td> <td>42-44</td> <td>106-111</td>
+            </tr>
+              <tr >
+                <td>XXL</td> <td>44-46</td> <td>111-116</td>
+            </tr>
+        </table>
+            </details>
+            </div>
+          
+        </div>
+            
+            </div>
+        
+        
+        <footer>
+            <div class="address">
+                <h3>Address</h3> 
+            <p> 123 Main Street <br/>Westport <br/>CT 06880</p>
+            </div>
+            <div class="number">
+            <h3>Customer service number</h3>
+            <p>(800) 555-1212</p>
+            </div>
+            <div class="coryright">
+            <h3>Copyright Statement</h3>
+            <p><a href="PrivacyNotice.html">Copyright &copy;2019 <br/> Tighty Whities, LLC <br/>All Rights Reserved </a></p>
+            </div>
+        
+        </footer>
+        
+	</body>
+</html>
